@@ -125,6 +125,16 @@ The frontend provides:
 
 ---
 
+## Web Client Preview
+
+The screenshot below demonstrates the full functionality of the web client, including:
+
+- **Alert panel** showing out-of-range notifications
+- **Real-time graphs** for temperature, humidity, and pressure  
+- **Settings panel** for threshold configuration and SMS notifications  
+
+![Web Client Dashboard](images/dashboard.png "Full Web Client Dashboard")
+
+---
+
 This project demonstrates practical experience with embedded systems, cloud integration, real-time data processing, and structured backend architecture suitable for industrial monitoring and control environments.
-
-
