@@ -1,0 +1,8 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+

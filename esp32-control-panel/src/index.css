@@ -1,0 +1,159 @@
+body {
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-list {
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.tabs-trigger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: #555;
+}
+
+.tabs-trigger-active {
+  border-bottom: 3px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.status-connecting {
+  background-color: #facc15; /* жовтий */
+}
+
+.status-connected {
+  background-color: #22c55e; /* зелений */
+}
+
+.status-disconnected {
+  background-color: #ef4444; /* червоний */
+}
+
+@media (max-width: 640px) {
+  .sms-section {
+    flex-direction: column;
+  }
+
+  .sms-section .input,
+  .sms-section .button {
+    width: 100%;
+  }
+}
+
+
+.live-chart {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-controls select,
+.chart-controls button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.chart-controls select:focus,
+.chart-controls button:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+.chart-controls button:hover {
+  background-color: #e0f7fa;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0px;  /* Сховати скролбар */
+  height: 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Робимо "палець" скролбару прозорим */
+}
+
+/* CSS для прихованого скролбару */
+.no-scrollbar {
+  overflow: hidden !important; /* Загальний приховування */
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+
+/* Для контейнера з чартами */
+.live-chart-container {
+  overflow: hidden !important; /* Точно приховує скролбар */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
